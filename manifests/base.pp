@@ -8,7 +8,7 @@ class profile::base
     ensure => present,
   }
   
-  ntp_server {'ntp.esl.cisco.com':
+  ntp_server {'10.66.141.50':
       ensure => present,
     }
 }

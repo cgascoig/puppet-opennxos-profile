@@ -4,7 +4,7 @@ class profile::base
   # include ciscopuppet
 
   package { 'cisco_node_utils' :
-    provider => 'gem',
+    provider => 'puppet_gem',
     ensure => present,
   }
   

@@ -3,5 +3,4 @@ stages:
 
 job_deploy:
   stage: deploy
-  script: 
-    - sudo r10k deploy environment -pv
+  script: "sudo r10k deploy environment -pv"

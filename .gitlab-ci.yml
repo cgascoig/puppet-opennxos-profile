@@ -1,0 +1,7 @@
+stages:
+  - deploy
+
+job_deploy:
+  stage: deploy
+  script: 
+    - sudo r10k deploy environment -pv

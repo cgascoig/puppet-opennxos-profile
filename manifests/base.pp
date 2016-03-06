@@ -13,6 +13,6 @@ class profile::base
     }
 
   syslog_server {'10.67.28.129':
-		ensure  => absent,	
+		ensure  => present,	
 	}
 }

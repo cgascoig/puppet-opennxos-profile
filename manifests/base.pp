@@ -16,7 +16,9 @@ class profile::base
 		ensure  => present,	
 	}
   
-  cisco_ospf {'underlay':
-    ensure    => present,
+  cisco_interface {'Ethernet1/20':
+    ensure      => present,
+    description => 'access VLAN',
+    access_vlan => '101',
   }
 }

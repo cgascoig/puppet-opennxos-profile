@@ -3,4 +3,4 @@ stages:
 
 job_deploy:
   stage: deploy
-  script: "sudo r10k deploy environment -pv"
+  script: "sudo r10k deploy environment -pv && sudo su -c 'mco puppet -I /^n9/ runall 10' - peadmin"

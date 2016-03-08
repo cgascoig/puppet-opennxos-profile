@@ -15,4 +15,8 @@ class profile::base
   syslog_server {'10.67.28.129':
 		ensure  => present,	
 	}
+  
+  cisco_ospf {'underlay':
+    ensure    => present,
+  }
 }

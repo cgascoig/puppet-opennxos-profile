@@ -1,6 +1,13 @@
 stages:
+  - test
   - deploy
 
 job_deploy:
   stage: deploy
+  only: 
+    - master
   script: "sudo r10k deploy environment -pv && sudo su -c 'mco puppet -I /^n9/ runall 10' - peadmin"
+  
+job_test:
+  stage: test
+  script: "puppet-lint --no-autoloader_layout-check ."

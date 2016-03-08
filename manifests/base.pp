@@ -1,11 +1,12 @@
+# base profile class for opennxos fabric
 class profile::base
 
 {
   # include ciscopuppet
 
   package { 'cisco_node_utils' :
-    ensure    => present,
-    provider  => 'puppet_gem',
+    ensure      => present,
+    provider    => 'puppet_gem',
   }
   
   ntp_server {'10.66.141.50':

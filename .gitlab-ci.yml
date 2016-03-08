@@ -10,4 +10,4 @@ job_deploy:
   
 job_test:
   stage: test
-  script: "puppet-lint ."
+  script: "puppet-lint --no-autoloader_layout-check ."

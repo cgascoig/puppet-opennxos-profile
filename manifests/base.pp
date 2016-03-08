@@ -20,5 +20,6 @@ class profile::base
     ensure      => present,
     description => 'access VLAN',
     access_vlan => '101',
+    switchport_mode => 'access',
   }
 }

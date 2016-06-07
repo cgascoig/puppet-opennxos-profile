@@ -19,8 +19,8 @@ class profile::base
   
   cisco_interface {'Ethernet1/20':
     ensure          => present,
-    description     => 'switchport in access VLAN 108',
-    access_vlan     => '108',
+    description     => 'switchport in access VLAN 109',
+    access_vlan     => '109',
     switchport_mode => 'access',
   }
 }
